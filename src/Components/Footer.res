@@ -16,7 +16,7 @@ let contact = [
 
 @react.component
 let make = () => {
-  <div className="flex flex-col gap-4 bg-primary-darkBlueFooter p-8 lg:px-20 lg:pt-52 lg:-z-50">
+  <div className="flex flex-col gap-4 bg-primary-darkBlueFooter p-8 lg:px-20 pt-52">
     <div>
       <img src="/assets/logo.svg" />
     </div>
