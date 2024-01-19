@@ -23,8 +23,8 @@ let make = () => {
     <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
       <div>
         {contact
-        ->Belt.Array.map(d => {
-          <div className="flex gap-4 my-4 items-center">
+        ->Belt.Array.mapWithIndex((i, d) => {
+          <div key={i->Belt.Int.toString} className="flex gap-4 my-4 items-center">
             <div>
               {d.icon === "/assets/icon-location.svg"
                 ? <img src={d.icon} width="50" height="50" />
